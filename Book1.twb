@@ -1,0 +1,1536 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.21.0110.1657                               -->
+<workbook original-version='18.1' source-build='2020.3.5 (20203.21.0110.1657)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <CascadingFilters />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Insurance_Data_Filtered' inline='true' name='federated.0nfdf7813t49i91elz0t71frnhsh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Insurance_Data_Filtered' name='textscan.0dhl41f10ajjnc125pld81r7sbps'>
+            <connection class='textscan' directory='/Users/sagar/Desktop/programming/Insurance Claim' filename='Insurance_Data_Filtered.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0dhl41f10ajjnc125pld81r7sbps' name='Insurance_Data_Filtered.csv' table='[Insurance_Data_Filtered#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='age' ordinal='0' />
+            <column datatype='date' name='policy_bind_date' ordinal='1' />
+            <column datatype='real' name='policy_annual_premium' ordinal='2' />
+            <column datatype='string' name='insured_sex' ordinal='3' />
+            <column datatype='date' name='incident_date' ordinal='4' />
+            <column datatype='string' name='incident_type' ordinal='5' />
+            <column datatype='string' name='collision_type' ordinal='6' />
+            <column datatype='string' name='incident_state' ordinal='7' />
+            <column datatype='string' name='incident_city' ordinal='8' />
+            <column datatype='integer' name='incident_hour_of_the_day' ordinal='9' />
+            <column datatype='real' name='total_claim_amount' ordinal='10' />
+            <column datatype='string' name='auto_model' ordinal='11' />
+            <column datatype='string' name='fraud_reported' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0dhl41f10ajjnc125pld81r7sbps' name='Insurance_Data_Filtered.csv' table='[Insurance_Data_Filtered#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='age' ordinal='0' />
+            <column datatype='date' name='policy_bind_date' ordinal='1' />
+            <column datatype='real' name='policy_annual_premium' ordinal='2' />
+            <column datatype='string' name='insured_sex' ordinal='3' />
+            <column datatype='date' name='incident_date' ordinal='4' />
+            <column datatype='string' name='incident_type' ordinal='5' />
+            <column datatype='string' name='collision_type' ordinal='6' />
+            <column datatype='string' name='incident_state' ordinal='7' />
+            <column datatype='string' name='incident_city' ordinal='8' />
+            <column datatype='integer' name='incident_hour_of_the_day' ordinal='9' />
+            <column datatype='real' name='total_claim_amount' ordinal='10' />
+            <column datatype='string' name='auto_model' ordinal='11' />
+            <column datatype='string' name='fraud_reported' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_bind_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[policy_bind_date]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>policy_bind_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>policy_annual_premium</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[policy_annual_premium]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>policy_annual_premium</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insured_sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[insured_sex]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>insured_sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[incident_date]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>incident_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incident_type]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>incident_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>collision_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[collision_type]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>collision_type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incident_state]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>incident_state</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incident_city]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>incident_city</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incident_hour_of_the_day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[incident_hour_of_the_day]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>incident_hour_of_the_day</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_claim_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_claim_amount]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>total_claim_amount</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>auto_model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[auto_model]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>auto_model</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_reported</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fraud_reported]</local-name>
+            <parent-name>[Insurance_Data_Filtered.csv]</parent-name>
+            <remote-alias>fraud_reported</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Insurance_Data_Filtered.csv' datatype='table' name='[__tableau_internal_object_id__].[Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Auto Model' datatype='string' name='[auto_model]' role='dimension' type='nominal' />
+      <column caption='Collision Type' datatype='string' name='[collision_type]' role='dimension' type='nominal' />
+      <column caption='Fraud Reported' datatype='string' name='[fraud_reported]' role='dimension' type='nominal' />
+      <column caption='Incident City' datatype='string' name='[incident_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Incident Date' datatype='date' name='[incident_date]' role='dimension' type='ordinal' />
+      <column caption='Incident Hour Of The Day' datatype='integer' name='[incident_hour_of_the_day]' role='dimension' type='quantitative' />
+      <column caption='Incident State' datatype='string' name='[incident_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Incident Type' datatype='string' name='[incident_type]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Insured Sex' datatype='string' name='[insured_sex]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;F&quot;' value='FEMALE' />
+          <alias key='&quot;M&quot;' value='MALE' />
+        </aliases>
+      </column>
+      <column caption='Policy Annual Premium' datatype='real' name='[policy_annual_premium]' role='measure' type='quantitative' />
+      <column caption='Policy Bind Date' datatype='date' name='[policy_bind_date]' role='dimension' type='ordinal' />
+      <column caption='Total Claim Amount' datatype='real' name='[total_claim_amount]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='incident_state, incident_city'>
+          <field>[incident_state]</field>
+          <field>[incident_city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Insurance_Data_Filtered.csv' id='Insurance_Data_Filtered.csv_F43D33CA4E23408AA95DE42049908842'>
+            <properties context=''>
+              <relation connection='textscan.0dhl41f10ajjnc125pld81r7sbps' name='Insurance_Data_Filtered.csv' table='[Insurance_Data_Filtered#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='age' ordinal='0' />
+                  <column datatype='date' name='policy_bind_date' ordinal='1' />
+                  <column datatype='real' name='policy_annual_premium' ordinal='2' />
+                  <column datatype='string' name='insured_sex' ordinal='3' />
+                  <column datatype='date' name='incident_date' ordinal='4' />
+                  <column datatype='string' name='incident_type' ordinal='5' />
+                  <column datatype='string' name='collision_type' ordinal='6' />
+                  <column datatype='string' name='incident_state' ordinal='7' />
+                  <column datatype='string' name='incident_city' ordinal='8' />
+                  <column datatype='integer' name='incident_hour_of_the_day' ordinal='9' />
+                  <column datatype='real' name='total_claim_amount' ordinal='10' />
+                  <column datatype='string' name='auto_model' ordinal='11' />
+                  <column datatype='string' name='fraud_reported' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Auto Model vs Claim Amount'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Insurance_Data_Filtered' name='federated.0nfdf7813t49i91elz0t71frnhsh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nfdf7813t49i91elz0t71frnhsh'>
+            <column caption='Auto Model' datatype='string' name='[auto_model]' role='dimension' type='nominal' />
+            <column caption='Collision Type' datatype='string' name='[collision_type]' role='dimension' type='nominal' />
+            <column caption='Incident State' datatype='string' name='[incident_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column aggregation='CountD' caption='Insured Sex' datatype='string' name='[insured_sex]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='FEMALE' />
+                <alias key='&quot;M&quot;' value='MALE' />
+              </aliases>
+            </column>
+            <column-instance column='[auto_model]' derivation='None' name='[none:auto_model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[collision_type]' derivation='None' name='[none:collision_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[incident_state]' derivation='None' name='[none:incident_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[insured_sex]' derivation='None' name='[none:insured_sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_claim_amount]' derivation='Sum' name='[sum:total_claim_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Claim Amount' datatype='real' name='[total_claim_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]' filter-group='6'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Accord&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Civic&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Grand Cherokee&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Neon&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]' filter-group='3'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Front Collision&quot;' />
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Rear Collision&quot;' />
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Side Collision&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:incident_state:nk]' member='&quot;OH&quot;' />
+              <groupfilter function='member' level='[none:incident_state:nk]' member='&quot;PA&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:insured_sex:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#898989' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]</rows>
+        <cols>[federated.0nfdf7813t49i91elz0t71frnhsh].[sum:total_claim_amount:qk]</cols>
+      </table>
+      <simple-id uuid='{1BA6C3AB-F77A-4E32-AA0E-2F050AD54824}' />
+    </worksheet>
+    <worksheet name='Claim Amount vs Collision Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Insurance_Data_Filtered' name='federated.0nfdf7813t49i91elz0t71frnhsh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nfdf7813t49i91elz0t71frnhsh'>
+            <column caption='Auto Model' datatype='string' name='[auto_model]' role='dimension' type='nominal' />
+            <column caption='Collision Type' datatype='string' name='[collision_type]' role='dimension' type='nominal' />
+            <column caption='Incident State' datatype='string' name='[incident_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column aggregation='CountD' caption='Insured Sex' datatype='string' name='[insured_sex]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='FEMALE' />
+                <alias key='&quot;M&quot;' value='MALE' />
+              </aliases>
+            </column>
+            <column-instance column='[auto_model]' derivation='None' name='[none:auto_model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[collision_type]' derivation='None' name='[none:collision_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[incident_state]' derivation='None' name='[none:incident_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[insured_sex]' derivation='None' name='[none:insured_sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_claim_amount]' derivation='Sum' name='[sum:total_claim_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Claim Amount' datatype='real' name='[total_claim_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]' filter-group='6'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Accord&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Civic&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Grand Cherokee&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Neon&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]' filter-group='3'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Front Collision&quot;' />
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Rear Collision&quot;' />
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Side Collision&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:incident_state:nk]' member='&quot;OH&quot;' />
+              <groupfilter function='member' level='[none:incident_state:nk]' member='&quot;PA&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:insured_sex:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0nfdf7813t49i91elz0t71frnhsh].[sum:total_claim_amount:qk]' scope='rows' value='Claim Amount' />
+            <encoding attr='space' class='0' field='[federated.0nfdf7813t49i91elz0t71frnhsh].[sum:total_claim_amount:qk]' field-type='quantitative' max='214740319.5' min='165000000.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nfdf7813t49i91elz0t71frnhsh].[sum:total_claim_amount:qk]</rows>
+        <cols>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]</cols>
+      </table>
+      <simple-id uuid='{C0ADF0DA-D2A9-4A72-8AF5-449D58372AE0}' />
+    </worksheet>
+    <worksheet name='Incident State vs Claims'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Inicident Location vs Total Claims</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Insurance_Data_Filtered' name='federated.0nfdf7813t49i91elz0t71frnhsh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nfdf7813t49i91elz0t71frnhsh'>
+            <column caption='Auto Model' datatype='string' name='[auto_model]' role='dimension' type='nominal' />
+            <column caption='Collision Type' datatype='string' name='[collision_type]' role='dimension' type='nominal' />
+            <column caption='Incident State' datatype='string' name='[incident_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column aggregation='CountD' caption='Insured Sex' datatype='string' name='[insured_sex]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='FEMALE' />
+                <alias key='&quot;M&quot;' value='MALE' />
+              </aliases>
+            </column>
+            <column-instance column='[auto_model]' derivation='None' name='[none:auto_model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[collision_type]' derivation='None' name='[none:collision_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[incident_state]' derivation='None' name='[none:incident_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[insured_sex]' derivation='None' name='[none:insured_sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_claim_amount]' derivation='Sum' name='[sum:total_claim_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Claim Amount' datatype='real' name='[total_claim_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]' filter-group='6'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Accord&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Civic&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Grand Cherokee&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Neon&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]' filter-group='3'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Front Collision&quot;' />
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Rear Collision&quot;' />
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Side Collision&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:incident_state:nk]' member='&quot;OH&quot;' />
+              <groupfilter function='member' level='[none:incident_state:nk]' member='&quot;PA&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:insured_sex:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff9da7' />
+                <format attr='mark-transparency' value='178' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nfdf7813t49i91elz0t71frnhsh].[sum:total_claim_amount:qk]</rows>
+        <cols>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]</cols>
+      </table>
+      <simple-id uuid='{4DBA2589-2620-4076-85C9-D8FCE29AA030}' />
+    </worksheet>
+    <worksheet name='Incident Types vs Gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Insurance_Data_Filtered' name='federated.0nfdf7813t49i91elz0t71frnhsh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nfdf7813t49i91elz0t71frnhsh'>
+            <column caption='Auto Model' datatype='string' name='[auto_model]' role='dimension' type='nominal' />
+            <column-instance column='[insured_sex]' derivation='Count' name='[cnt:insured_sex:qk]' pivot='key' type='quantitative' />
+            <column caption='Collision Type' datatype='string' name='[collision_type]' role='dimension' type='nominal' />
+            <column caption='Incident State' datatype='string' name='[incident_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Incident Type' datatype='string' name='[incident_type]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Insured Sex' datatype='string' name='[insured_sex]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='FEMALE' />
+                <alias key='&quot;M&quot;' value='MALE' />
+              </aliases>
+            </column>
+            <column-instance column='[auto_model]' derivation='None' name='[none:auto_model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[collision_type]' derivation='None' name='[none:collision_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[incident_state]' derivation='None' name='[none:incident_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[incident_type]' derivation='None' name='[none:incident_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[insured_sex]' derivation='None' name='[none:insured_sex:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]' filter-group='6'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Accord&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Civic&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Grand Cherokee&quot;' />
+              <groupfilter function='member' level='[none:auto_model:nk]' member='&quot;Neon&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]' filter-group='3'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Front Collision&quot;' />
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Rear Collision&quot;' />
+              <groupfilter function='member' level='[none:collision_type:nk]' member='&quot;Side Collision&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:incident_state:nk]' member='&quot;OH&quot;' />
+              <groupfilter function='member' level='[none:incident_state:nk]' member='&quot;PA&quot;' />
+            </groupfilter>
+          </filter>
+          <natural-sort column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_type:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:insured_sex:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]</column>
+            <column>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0nfdf7813t49i91elz0t71frnhsh].[cnt:insured_sex:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_type:nk]' value='106' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]</rows>
+        <cols>([federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_type:nk] * [federated.0nfdf7813t49i91elz0t71frnhsh].[cnt:insured_sex:qk])</cols>
+      </table>
+      <simple-id uuid='{9A835809-73F3-4C0C-9654-FC659831930E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Sathu'>Insurance Claim Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='780' maxwidth='1444' minheight='780' minwidth='1444' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Insurance_Data_Filtered' name='federated.0nfdf7813t49i91elz0t71frnhsh' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0nfdf7813t49i91elz0t71frnhsh'>
+        <column caption='Auto Model' datatype='string' name='[auto_model]' role='dimension' type='nominal' />
+        <column caption='Collision Type' datatype='string' name='[collision_type]' role='dimension' type='nominal' />
+        <column caption='Incident State' datatype='string' name='[incident_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column aggregation='CountD' caption='Insured Sex' datatype='string' name='[insured_sex]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;F&quot;' value='FEMALE' />
+            <alias key='&quot;M&quot;' value='MALE' />
+          </aliases>
+        </column>
+        <column-instance column='[auto_model]' derivation='None' name='[none:auto_model:nk]' pivot='key' type='nominal' />
+        <column-instance column='[collision_type]' derivation='None' name='[none:collision_type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[incident_state]' derivation='None' name='[none:incident_state:nk]' pivot='key' type='nominal' />
+        <column-instance column='[insured_sex]' derivation='None' name='[none:insured_sex:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97948' id='18' param='vert' w='98892' x='554' y='1026'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4872' id='19' w='98892' x='554' y='1026'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93076' id='7' param='horz' w='98892' x='554' y='5898'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='93076' id='5' w='87812' x='554' y='5898'>
+                <zone h='93076' id='3' name='Claim Amount vs Collision Type' w='40859' x='554' y='5898'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='23269' id='9' name='Incident Types vs Gender' w='46953' x='41413' y='52434'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46536' id='11' name='Incident State vs Claims' w='46953' x='41413' y='5898'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='23271' id='15' name='Auto Model vs Claim Amount' w='46953' x='41413' y='75703'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='93076' id='6' is-fixed='true' param='vert' w='11080' x='88366' y='5898'>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='16282' id='8' name='Claim Amount vs Collision Type' param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]' w='11080' x='88366' y='5898'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='11411' id='10' name='Incident Types vs Gender' param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]' w='11080' x='88366' y='22180'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='23590' id='12' name='Incident State vs Claims' param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]' values='cascading' w='11080' x='88366' y='33591'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='41793' id='16' name='Auto Model vs Claim Amount' param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]' w='11080' x='88366' y='57181'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Sathu'>Insurance Claim Analysis</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='25' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97948' id='24' param='vert' w='98892' x='554' y='1026'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4872' id='19' w='98892' x='554' y='1026'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='16282' id='8' mode='checkdropdown' name='Claim Amount vs Collision Type' param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]' w='11080' x='88366' y='5898'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='93076' id='3' is-fixed='true' name='Claim Amount vs Collision Type' w='40859' x='554' y='5898'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='23590' id='12' mode='checkdropdown' name='Incident State vs Claims' param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]' values='cascading' w='11080' x='88366' y='33591'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46536' id='11' is-fixed='true' name='Incident State vs Claims' w='46953' x='41413' y='5898'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='11411' id='10' mode='checkdropdown' name='Incident Types vs Gender' param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]' w='11080' x='88366' y='22180'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='173' h='23269' id='9' is-fixed='true' name='Incident Types vs Gender' w='46953' x='41413' y='52434'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='41793' id='16' mode='checkdropdown' name='Auto Model vs Claim Amount' param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]' w='11080' x='88366' y='57181'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='174' h='23271' id='15' is-fixed='true' name='Auto Model vs Claim Amount' w='46953' x='41413' y='75703'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{612C830E-4132-4FCC-91FE-39ACD5ACE4FC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Incident State vs Claims'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]' type='filter' values='cascading' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_city:nk]</field>
+            <field>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{00EBBFF1-12B6-479C-A474-F4ADF4A7D5A5}' />
+    </window>
+    <window class='worksheet' name='Incident Types vs Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:age:ok]</field>
+            <field>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:incident_type:nk]</field>
+            <field>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:insured_sex:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FF0D0D9C-C272-4989-9609-05773F230B5C}' />
+    </window>
+    <window class='worksheet' name='Claim Amount vs Collision Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:collision_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{407F3F3E-50CA-4441-8E14-EA6FCB63E9AC}' />
+    </window>
+    <window class='worksheet' name='Auto Model vs Claim Amount'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0nfdf7813t49i91elz0t71frnhsh].[none:auto_model:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2D0F1BE3-44D1-4EA5-A3E5-D2F820C4E949}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Auto Model vs Claim Amount' />
+        <viewpoint name='Claim Amount vs Collision Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Incident State vs Claims'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Incident Types vs Gender' />
+      </viewpoints>
+      <active id='-1' />
+      <device-preview selected='Desktop' visible='true' />
+      <simple-id uuid='{46E3F120-E471-4C25-8297-488A11869051}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Auto Model vs Claim Amount' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Claim Amount vs Collision Type' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAdE0lEQVR4nO3dWWwb1/3o8S85FHcNxUWURC3UastyrMjO7Y3r5l93QY2iyA1QFOi/L+0F
+      el/6kLfmMWjz2ue+pH0uGmRp6gRJkxqO7XhN7MoOJVc2LUXWSpGUuIk7OUPeB/81teJNskVL
+      Ms8HMAwtM3NInR/nnDm/c46uWq1WEYQ6pd/uAgjCdhIBINQ1EQDClshkMiiK8lSvWa1WCQaD
+      hEIhisUis7Oz636ez+cplUoPPYcIAGFLvP3220xPTz/Va/7hD3/g+vXrvPXWW4yOjvLJJ5+s
+      +/nCwgLLy8sPPYehlgUU6s+rr76K1+ulo6OD3t5eLly4gCzLuN1ufvKTnzA6OkpHRwd//OMf
+      6e7uZmhoiGAwiKIovPjii5w4cYJ8Ps9vfvMbzp8/Tzwex+Vy8fzzz/Ppp58iSRKvvfYahUKB
+      dDrNz372MwCi0ShjY2P84x//WHc+l8vFm2++iSRJqKqK0Wikvb2dX//614C4AwhbzGw287vf
+      /Y65uTlyuRyqqvKd73yHRCKBqqpkMhkKhQJms5nXXnuNkZEROjo6mJiYIJvN8v3vf59f/vKX
+      XL9+nVu3bvHb3/6WX/ziF/zlL3/B4/EQDocJhULk83kaGxvvuf43z5fP58lkMvz+978nm83y
+      +uuvMzc3B4CqqiIAhK0lyzIAer0et9vNq6++yp///GeMRiORSITx8fF1v/fmm29y6NAhGhoa
+      tO9LkkS1WqVUKlEqlQgEAni9Xn7605/yq1/9Co/Hg9vtZmFhgUwmw8TEhNb+/+b5AJxOJzqd
+      jqamJnQ6HXr9nWp/7tw5pDfeeOONp/XmCM+2trY2rFYr3d3dAHi9Xt5//32OHTvGt7/9bY4f
+      P87g4CCDg4PY7Xa6u7uRZZmLFy8yPDzM3r17cbvdyLKMzWZjeHiY9957j97eXn74wx/y7rvv
+      UiwWGR4eRqfT8dxzz/HWW2+xvLzMkSNHsFgsDA4O3vd8a2W6+/+5uTl0YiBMqGeiCSTUNREA
+      Ql0TASDUNREAQl0TASDUtXsCIBaLkclkiEaj675fLBYfmlexNtBRa9lslpWVlXXfW1lZQVVV
+      otEouVyOSqWi/eybX39TPp8nGo0SjUYfmTcibE4+n1/3dSaTeeDX36xvD6Kq6qb/Tg+rA+sC
+      4NKlS4yNjTE9Pc3o6CjVapX5+Xmy2SzpdJpsNksymWRpaYlIJEIul9OO/fvf/87ly5epVCrE
+      YjGWl5dZXFykVCpRLBaZmZkB7rwpqqpSLBbJZrPMzc1RKBQ4fvw4qVRKK/Da/9FolGQyCUAk
+      EuHDDz9kamoKgNnZWQqFAuPj45TLZUZHR1leXkZRFEKhEJlMRvs6Go2SSCSoVCokEgnC4TBw
+      J6A+++wzAoEA8Xhcu24+n2d+fp5isYiiKNy+fRvxxHhzTp06RT6fJxwOk8vlWFpaAiCZTGr1
+      CO586H722WcALC4uau//2nGnT5/m66+/RlVVlpeXCQQCAOvqVaFQIBwOoygKMzMzqKrKhx9+
+      yNLSklYHkskkkUhkXR1YNxB27do1fvzjH9PS0sLU1BRtbW1MT09z8uRJmpubKZfL/O1vf2N2
+      dhaz2cy1a9fYt28fqVSKYrFILBajq6uLt99+m4mJCVwuF1999RWBQAC73U4wGGRqagqn00kw
+      GOTTTz/FbDazuLjI3Nwc3d3dNDY28tFHH9He3s6lS5c4d+4cHo+H5uZmPv/8c1555RW6uro4
+      f/48iqJw/vx57HY7nZ2dzMzMkE6naWho4MyZMzgcDubm5jAajVy5coUbN27g8/l45513WFxc
+      ZGhoCLvdTqlUoq+vj1AoRC6X48KFC9y+fRuLxcLZs2e5desWTqeTsbExent7n2IV2t0mJyeZ
+      nJxEp9Pxr3/9i3Q6jdPp5PTp09jtdr7++muMRiNXr14llUphNBoJhUJcvnyZ+fl57bhisYjB
+      YKCtrY1cLsfq6irt7e289957Wr26ePEidrudSqWinSORSODxeFhYWMDr9fLRRx8Ri8XQ6/V8
+      +OGHLC4urr8DqKpKoVDQbhdTU1NahVrT399PR0cHBw8exGKxAPDFF1+QyWSYmZmhXC6zb98+
+      urq6GBkZQZIkrFYrw8PDpNNpKpWK9kna3d3NgQMHkCSJ1tZWfD4fAD6fjw8++ID/+q//4qWX
+      XuLq1asAtLS0cPv2bSqVCslkkuHhYWw22z1vvMfjYWBgQBt2j8fjDA4O0tXVRTab5bnnnqO9
+      vf2eJtuhQ4f44osvaGxsxGQyceDAASwWi9ZEWiufsHEmk4kXXnhB+zvFYjGGhoYYGBgA7mRs
+      Hj58mJaWFiKRCLFYjLa2tnXHeb1e+vv7MRjW527eXa8cDgfDw8MEAgEaGhqoVqt4vV4GBweB
+      Oy2P9vZ2hoaGiMViWh1Ydwfo7u7m5MmTJBIJOjo6aG1tZXp6Go/HQ29vL1arFYvFgsvlwuVy
+      odPpcLlcKIrCkSNH6Ovro1Ao0NjYSFNTE263GwC73c6VK1f47ne/SzqdZmpqij179iDLMi6X
+      C4PBgKIopNNpmpubaWtrIxKJ0NvbSyAQoLm5Gb/fT1tbG1999RU3b97k6NGjnDx5Er/fT0tL
+      C06nE71ej8vlQpIkpqamaG9vx+fz0d/fz7Vr1wAYGhpCkiQcDgdNTU1aXogsy5hMJq5fv86x
+      Y8eYnJzk9u3b7Nu3j/7+fqLRKF6vF5fLVdsa84xxu93ae+ZyuRgYGNCamz6fj6GhIU6dOgXA
+      D37wA2ZmZrBYLPj9fu243t5ezpw5Q29vL5IkEQgEtLqyVq8URWF8fJyuri5CoRBdXV3s2bOH
+      c+fOMTAwQGtrK/Pz84TDYY4cOaLVAZEKcZdkMsnt27c5ePAgU1NT9Pf3b3eRhBoTASDUNTEO
+      INQ1EQBCXRMBsAnz8/PaHNNwOEw4HCYSiQCQSqUoFArrfv/rr79mbGzsqZdT2DjRB9iE48eP
+      c/DgQc6dO4csy9jtdpxOJ6FQiObmZiqVCpVKhWg0SmdnJ36/n/HxcRobG8nlcszPz+Pz+chm
+      s7z88svb/XIExKT4Tclms9y8eZNisUgmk8Fut5NIJEgmk4RCIVwuF3a7HVmWSaVSmM1mzGYz
+      c3Nz2iCOuCPsLOIOsAlrb5WqqusGZRRFQZIkdDodiqLcM2AzOjrKnj17SCaTdHZ2UqlUtPEH
+      YXtteQCIP66w1WpZp7b8rOKGImy1WtYp8VEt1DXRCRaeCdmVGBSKmz5OBIDwbFiKYIvENn2Y
+      aAIJdU0EgFDXRAAIdU0EgFDXRCdY2BZriyoYDAZMJhPpdBpZllleXqa5uRlJkpBl+Z5R9a0m
+      7gDCtrDZbNry5+l0GoBAIEBfXx/j4+Pcvn1b29SiUqmgKMpD/1UqVarVzf8TdwBhW8zOzuJ0
+      Okmn09odoKuri4mJCfx+P2azmVKphMlkAkCSpIeeT6/XodPpNl0OEQDCtti/f/92FwHYZBNo
+      bbmUtdvHw1ZcE4TdYMN3gGKxyL///W+8Xi+JRIKGhgYURSESiTA8PMzi4iIjIyO1LKsgbLkN
+      B0C1WsVisdDR0UGpVEJVVSRJwufzMTk5SWtrqzYjSmSE1i+9Xr+r0uE31Qcwm83E43F0Op02
+      BXAtKAwGA3q9nmq1+sgOiyDsFBsOALPZTE9PD4BYHU14Zuyee5Ug1IAIAKGuiXEAoeampqYY
+      GxvD5/Nx+PDh7S7OOuIOINRcR0cHJpOJtra27S7KPUQACE9FsVh8rFSFWhMBINScwWCgpaWF
+      WGz9lMW7x4vWsgqednaB6AMINbf2yX/3ANnKygrJZJKVlRX6+/uZm5ujXC5jtVopFovYbDYG
+      BgZEOrSw+63tH3f3pooejwe9Xs/AwACLi4va+qltbW0UCgXy+Tx6vV6kQwu7n8ViIZPJaAOp
+      cGevMKPRSKlUoqenh2w2y5EjRwiHw7zwwgsYDAbK5bJIhxZ2v3w+Tz6f1yozoO0ft0aWZQD8
+      fv9TLZtoAgk1V61Wd2yS3KbSoaenp9Hr9RSLRRobG7FarSwsLLB3714WFha0LSkF4W6qqtLV
+      1bUjkyQ3HAAGg0HrnTscDvR6PdFoFL1eTzAYxOl0inRo4b6f9NevX9+xH5AbXh59dXWVaDSK
+      w+EgkUggyzKlUonGxkZtswin06nNExCEbyqVShiNxk0ft5E6lR2feKylEbd8fwARAMI35fN5
+      Pv74Y771rW89Vie3lgGw83olwjMpn8+jqup2F+MeIgCEmovH48TjccLh8HYX5R4iAISa83q9
+      tLe3Y7fbt7so9xABINRctVqlvb19Rz4dFAEg1Nz169dRVRWLxbLu+2trS929xpTIBhWeOclk
+      kiNHjvDll1+yZ88e4D/ZoPl8HqPRSDabFdmgwrPpxRdf5Kuvvlo3HXItG9RsNqPX60U2qPDs
+      mpmZQVEUwuGwNg6wlg1qsVi0xXFFNqjwTOrv7+edd97BYrFoAfDNbNC1J0QiG1R45uj1evbu
+      3bsjs0F3XomEZ87MzAwzMzPbXYz72nAAVCoVpqenKRaLhEIh0uk08XicRCJBtVolmUzWspzC
+      LtbV1aVlEO80G+4DqKqKTqdjfHwcl8tFOp1GkiQWFhbo6ekhn88jy7JIh65z90uHLpfLGI1G
+      bDbbNpXqwTYcANlsllAoRHNzM/F4HKvVSrlcpqOjg/n5eXw+n1gdWriv06dPI8vyjqwXj5UO
+      XalU0Ol02lS3u4l0aOGbIpEILS0tj318LdOhH+sx6Fql34krfQk7z5NU/lrbeb0SQXiKRAAI
+      dU0EgFDXRCqEsK3m5uaw2+3aQgvLy8s0NzcjSRKyLItsUOHZlsvlyGazAAQCAfr6+hgfH+f2
+      7dtIkiSyQYVn29p4Ui6Xo6uri4mJCfx+P2azmVKpJLJBhWdbV1fXtl5fNIGEuiYCQKhrIgCE
+      uiYCQKhrG+4El8tlbt26hdPpJBaLYbfbxfLowq634QBoaGjAYrGg1+tZWVnB5XKJ5dGFe+zU
+      jTAe5IEBkC8UMBmN2osplUoUi0VkWcbv9yNJEg6HY93y6GI+gLDbPHA+wKV/Bbg5eZv/+9+v
+      bCqixXwAYas99eXRL18d5y/vfsS+gR6KxdKmTyoIj6NcLjMxMcHy8jLxeBxFUWp+zfsGgNMh
+      86v//j8c/l/PY7GYa14IQQCYn59flwtU60Q4eEAfYKDv6S5OJAhwZxn1u3OBisXiuq1Va+G+
+      fYBqtcrbb7+NyWTi5ZdfpqGhYcMnFH0AYausrRpdqVQe2Q8tTM9iTqQ2fY373gF0Oh39/f0U
+      i0VRmYVto9PptPr3qHpoG+h9rGs8MKwKhYKY9C7sCLUcV3jgmdvb24nFNv9YSRC2Wi0/iB8a
+      Wg0NDTtyZz9B2CoPDIBQKEShUBBpDcIz7YEB4HA4yGazm3oCJAi7zQMDYGFhAbfbLe4AwjPt
+      gUNt1Wr1nk//RCKBxWIhkUhgt9spl8vodDqamppIpVI0NTXVvMCCsJXuGwDVahW/38/8/Lz2
+      vXK5TCgUQpIkUqkUTqcTvV4vlkcX1nkm0qEzmYz26b6mWq1SKpXo6OggnU5jMpkol8sMDAyQ
+      SCRwuVwiHVrYdR6YDr26uko8Hsfv92/qOaxIhRDWLC4u0t7efs/38/k8iUQCn88HwM2bNx84
+      mzCfz2OxWKhUKpw4cULbdX54eHhLyii98cYbb9zvB6dPn2ZlZYW+vr5NBcD99gwQ6tO5c+cw
+      m82Mjo6iqirVapWzZ8/S0tJCuVwmn89z4cIFlpeXMRqNXL16la6uLi5dusSNGzdwOBz86U9/
+      wuVy4fV66e/vJxgMcvjwYZaWlmhoaCAajfLll18SDofp6OjgzJkzKIqCwWDg1KlTyLKM3W5n
+      dnYWWZZZWFjg8uXLFItFmpubH/wU6GnkYgvPvrGxMY4cOUIwGOTMmTP86Ec/olqtMjMzw/nz
+      5zl27BiSJHHixAmsVitnz54lHA7j8/nI5XIcOHCAffv2rTtnQ0MDFy9e5OLFi+h0d1aE0+v1
+      vP/++0iSxKlTp7h69SoOh0PbfvXatWtcvXqVlZUVwuGwtmfBfQMgk8nQ09NDY2Njjd8e4Vln
+      MBgwm81asziZTFIul4E7H7KxWEy7OzgcDvr6+rDZbDQ0NFCpVFhdXaVQKNxzXq/Xy9LSEg6H
+      A1VVWV5epqmpiWKxyMjICENDQ7S0tPDPf/4TuLMz/Y0bN+jr6+N73/seH3zwAfCQPsDY2BgT
+      ExP8/Oc/F1MihccSi8XQ6XS4XC7i8TgWi4VAIMCBAwdQFIVyucz09DS9vb1IkkQwGGRkZIRc
+      LofZbEav17O8vEypVKKvr087p9vtZmJigmw2y9DQEH/96185duwYfr+fQCCALMu43W4CgQCH
+      Dh3CZrOhKAoLCwt0dHRw5coV/H4/Pp/vwQEwNzfH+Pg4x44dE/MBhB1nLXBUVSWdTj/2GNR9
+      P9pTqRRTU1Prbl2CsJP09t7J/5ck6YkGYO8bAIqi0NTUhCRJVCqVxz65IOx09x0Ic7vdrKys
+      4HQ6n8rEZEHYLo+1T/DDiD6AsJuIESuhrokAEOrapgJgrbUkOsbCs2JTy6OPjY3hdDqZnZ3F
+      6XTi8XgIBoMMDw+zuLjIyMhILcsq1LF0Ol2TzIRNLY/udDqpVqs0NTXR2dnJzMwMPp+PyclJ
+      WltbxfLowq6aD1CpVDYeAKVSSRvWNhqNAPj9fmw2Gx0dHRgMBjEfQNhVKpWKeAwq7A61aAKp
+      qiqeAgn1S5IkcQcQaqNYLFIqbd3eErFUiqRa3vDvt9rs2EyPXtpf5DkINWEymR64tHmlUiEY
+      DCLLMqqqoigKPT09TE9P09jYiNlsRlVVKpUK6XQav9/P1/EV3rpxfcPX/3+H/jetG2gyiQAQ
+      nrpKpUI8HkdVVex2O8VikfHxcSqVCvl8Hr1ej8lkolqtajO+akX0AYSnbm35fVmWtXWldDod
+      Xq8Xi8WCxWIhn89r+wLU8rG66AMIu8JsNMKt1eSGf3+kxUezaAIJ9erq0gL6yKMbOCIAhG0X
+      CAQYGhpibGyM5uZmzGYziqJQqVRQFAW/308in+Pk1K0tv7YIAGHb2Ww2rly5gsvlIhKJ0NDQ
+      QGNj41PpBIsAELad2+3GZDJht9vxer1Uq1USiQRGo1FbMqVWRCdYqIntHgirVqro9I++c2w4
+      ABRFYXZ2FpfLxfLyMg6Hg3K5TKlUorOzk6WlJbq6ukQACDWx2VygjdbDDTeBJElCp9ORTCYJ
+      h8PaySORCIVCAaPRKNKhhR2TDr3RMmxqQkwqlUKWZW1eQLVapaenh5WVFaxWq0iHFmpqaWkJ
+      t9utpeM/SDabJR6P09nZ+chzij6AsCuk02nC4bA2ivwwU1NTNDQ04Pf7H3ne7b9XCcIGra6u
+      bqhp43Q6iUQiGzqnuAMIu0I6ncZms224bb+WR/Qo4g4g7Bqb6Vxv9HdFAAi7wqM6vo9LBICw
+      Kzxocs2TEgEg1DURAEJdEwEg1DURAEJdEwEg1DURAEJd29SEmEQigSRJrKys0NTURLlcxmg0
+      0tTURCqVeqLNygRhO2wqGzQUCrF//36WlpYIh8M4nU4CgQA9PT3k83lkWRbp0HVup6RDb9SG
+      A6BarZJKpUin0xgMBhwOB0tLS3R0dDA/P4/P5xPp0MI65XKZXC6Hw+HY0O+vrq5it9vR6/Uk
+      k8n7tiii0Sher1f7em0zx0fVuVgshslkIpfLrTt+w6FqNBo5cuQIjY2N9PX10dLSwvPPP09/
+      fz8vvfSStm+rIKy5cOECH3/8MQD5fB5VVclmsxw/fpx4PE6xWGRmZkb7/XfffZfR0VFKpRKv
+      v/46AIuLi2QyGeBOJf7ss88AmJmZoVQqMT4+rs1MvPv/ubk5CoUCAJcuXWJsbIzp6WlGR0ep
+      VqvMz8+TzWYff1J8rWfrC7vf6uoqLpeLQqHA559/zgsvvEAwGCQajZJOpzlx4gSDg4N8/vnn
+      HD16lNbWViKRCFeuXOHw4cNMTEywsrLCzMwMR48e5fr169q5nE4nly9fprm5Gbizf8XFixdR
+      VRW3200sFkNVVXp6elheXuaVV14B7gRUNpslFArx6aefiqdAQm3kcjlmZ2cpFotcunRJ6xua
+      TCba2trw+/1YrVaGh4dJp9PacUajkVgspuX0j4yM0NTUxPz8PIcPH6alpYVwOEw0GqWjo0M7
+      zm63UygUUFWVgwcPYrVauXnzJnAnRb9QKGh7201NTZFOp2loaBDzAYTaWFxcpLGxEVmWuXHj
+      BolEgng8zsGDB1lZWaFcLmMymZiZmeG73/0uDoeDyclJvF4vs7OzmM1muru7OXHiBB6Ph0OH
+      DvHJJ5+g1+s5evQoZ8+epaWlBY/HQ2dnJwaDgWAwSENDAxaLhWvXruH3+9m/fz/5fJ6TJ0/i
+      8XjweDy4XC4uXLiAzWYTASDUN9EEEuqaCAChrokAEOqaCAChrokAEOqaCAChrokAEOqaCABh
+      11ob2X0Sm0qHvnXrFp2dnQSDQdxuN6qqsrq6yt69e1lYWGBwcPCJCyQI8Xgcl8v1wJ9nMhns
+      djtzc3O88847T3StDQfA2hCzLMvIsky1WtVyv4PBIE6nUyyPLjzxfIBKpcK1a9d4/vnnyWaz
+      lEol9Ho9+Xweg8GAJElEIhFeeumlLSnvhgOgVCpRLBZJp9O0tLRQKBRQFIXu7m4tIsV8AOFJ
+      rc0tCQaD+P1+bePsUqmEzWbb8lQbkQsk7FhrbXydTkelUtHq1VodW1pa4syZM090DREAwq61
+      FXVN7BIp7GiLi4tYrVacTidwZ/cXm80G3GkuPbVOsCA8beFwGLvdTiaTIZfLodPptK26Wltb
+      t+QaYhxA2LGcTicLCwuUSiUMBoO26UU8Ht+yJ42iDyDsWvF4nBs3bjzROUQTSNi1zGbzhnaC
+      fBgRAEJNTUxM4PV60ev1qKqKxWIhnU7jcrmYmZmhra2NlZUVGhsbCYVCDA4OEovFcLvdFAoF
+      crmcttJDJpPB4XCwsrKCz+cjGo2KTrCwc6mqqrXZU6kUHo+HxcVFLBYLk5OT9PT0oKoqlUqF
+      5uZm4vE458+fx2QyEQqFsFqtWK1WYrEYmUyGSCRCqVTCYrHgdru3pIwiAISakSQJo9GI2Wym
+      ubmZdDqNx+PBZrMhyzKxWAyPx4PVaiUSieD1epFlmXQ6rW2IHQqF6O3tpVQq0dDQgN1uJ5VK
+      YTBsTdXdcCdYURRmZ2dpbW0lGo1iNpvR6/Vks1k6OztZWlqiq6tLdIKFp0ZRlCdenG3DYSRJ
+      Ejqdjrm5ORRFQVVV4M5ajYVCoWa7+AnCg2zFQrwbPnptAMJms1GtVjGbzdrSc6qqYrVan6gg
+      grBZer3+secErGUtb+k4QKVS0To+Qn3S6XRP9e8fCAQwGo0kk0n27Nmzoc5xIpHgxo0buFyu
+      re0E74R06Gq1WteL9m73619rGj8tVqsVRVFIpVKYzeYNHVMqleju7iabzW79SPB2/gHuvrai
+      KMB/+i7bXTG2wt1/qrW0gLXXtFNe+9N+n6PRKDabDUmSUBQFu93+yGMSiQSpVAq32731AVAr
+      ExMTuFwuMpkMJpMJSZLIZrOYzWaWl5fZv38/wWAQr9dLNpvVbsMmk4l0Ok1jYyOSJGlr1Dud
+      Tjwezza/qs05d+4ce/bsAWBycpK+vj5UVUWWZRYXF2lqaqJYLGqBcvdrhzsBkUgkaG1tFdtZ
+      /Y9dMw5QrVa1PkaxWATAYDCgKApNTU0oioLT6WR1dVVriul0OnK5HNlsFkBrmhkMBu2Z9G4y
+      MDDA4uIixWJR25nH4XBgMpnwer3EYjH0er32Ou/32k0mE4lEQgTA/9g1AdDb24vFYiGfz1Mq
+      lbRhdbizEYPNZmN1dRWv10sul9Pyx6vVKgaDgZaWlnuO220KhQJ79+5Fr9draQP5fJ7m5mYW
+      Fhbwer0Ui0VkWQbWv/Z8Pq8NTAn/sWuaQIJQC+J5pVDXRAAIdU0EgFDXRAAIde3/A0ttO77T
+      INL8AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Incident State vs Claims' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='114' name='Incident Types vs Gender' width='192'>
+      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
+      G4yEHA5sRUEAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
